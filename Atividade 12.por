@@ -1,18 +1,22 @@
 programa
 {
-	inclua biblioteca Matematica --> m
+	inclua biblioteca Matematica --> m
 	
 	funcao inicio()
 	{
-		inteiro num1, num2, num3, num4, num5
+		real num1, num2, num3, num4, num5
 		escreva("Me informe 5 números: ")
 		leia(num1, num2, num3, num4, num5)
 		escreva("\n\n")
 
-	inteiro soma = num1 + num2 + num3 + num4 + num5
-	inteiro media = soma/5
+		real maior1 = m.maior_numero(num1, num2)
+		real maior2 = m.maior_numero(num3, num4)
+		real maior3 = m.maior_numero(maior1, maior2)
+		real maior = m.maior_numero(maior3, num5)
 		
-		escreva("A soma deles é ", soma, " e a média é ", media)
+
+		
+		escreva("O maior número é ", maior)
 	}
 }
 /* $$$ Portugol Studio $$$ 
