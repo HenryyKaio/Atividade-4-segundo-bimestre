@@ -10,19 +10,35 @@ programa
 		inteiro anos = 0
 		escreva("Me diga a população do país A: ")
 		leia(A)
+		enquanto(A <= 0){
+			escreva("Quantidade de população inválida, insira um número válido\n")
+			escreva("Me diga a população do país A: ")
+			leia(A)
+		}
 		escreva("Me informe a taxa de crescimento desse país: ")
 		leia(taxaA)
 		escreva("Me diga a população do país B: ")
 		leia(B)
+		enquanto(B <= 0){
+			escreva("Quantidade de população inválida, insira um número válido\n")
+			escreva("Me diga a população do país B: ")
+			leia(B)
+		}
 		escreva("Me informe a taxa de crescimento desse país: ")
 		leia(taxaB)
+
 		
+		
+
+
 		enquanto(A < B){
 			A += A * taxaA
 			B += B * taxaB
 			anos++
 		}
+			
 		escreva("Demorarão ", anos, " anos para o País A ter uma população igual ao país B")
+		
 		
 	}
 }
